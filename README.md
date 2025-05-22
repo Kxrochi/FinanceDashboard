@@ -1,4 +1,4 @@
-# My Money Tracker
+# Personal Finanace Tracker
 
 A sleek and modern finance dashboard to help you track your money in and out. Built with Flask and modern web technologies.
 
