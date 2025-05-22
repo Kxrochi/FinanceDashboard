@@ -1,5 +1,7 @@
 # Personal Finanace Tracker 
 
+https://lucent-entremet-eb1e92.netlify.app/
+
 A sleek and modern finance dashboard to help you track your money in and out. Built with Flask and modern web technologies.
 
 ## Features
