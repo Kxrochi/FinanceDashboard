@@ -1,59 +1,80 @@
-# Personal Finance Tracker
+# My Money Tracker
 
-A web-based application to track your personal finances, including income, expenses, and savings. The application provides features for categorizing transactions, viewing spending patterns, and generating financial summaries.
+A sleek and modern finance dashboard to help you track your money in and out. Built with Flask and modern web technologies.
 
 ## Features
 
-- Add and delete transactions
-- Categorize expenses
-- View total income and expenses
-- Track balance
-- Visualize spending patterns with charts
-- Categorize expenses by type
-- Responsive design for all devices
+### Money Overview
+- Track your total income and expenses
+- See your current balance
+- Monitor your savings rate
+- Beautiful dark theme with interactive elements
 
-## Setup
+### Visual Analytics
+- Pie chart showing where your money goes
+- Bar chart comparing money in vs money out
+- Interactive charts with hover effects
 
-1. Make sure you have Python 3.7+ installed on your system.
+### Transaction Management
+- Add new transactions with type, amount, category, and description
+- View all transactions in a sortable and filterable list
+- Delete transactions with confirmation
+- Search through your transaction history
 
-2. Install the required dependencies:
+### Smart Filtering
+- Filter by transaction type (Money In/Money Out)
+- Filter by category
+- Sort by date or amount
+- Search through transactions
+
+## Tech Stack
+
+- **Backend**: Flask (Python)
+- **Frontend**: 
+  - HTML5
+  - CSS3 with modern features
+  - JavaScript (ES6+)
+- **Libraries**:
+  - Chart.js for data visualization
+  - GSAP for smooth animations
+  - Font Awesome for icons
+  - Bootstrap for responsive layout
+
+## Getting Started
+
+1. Clone the repository
+2. Install dependencies:
    ```bash
    pip install -r requirements.txt
    ```
-
 3. Run the application:
    ```bash
    python app.py
    ```
+4. Open your browser and navigate to `http://localhost:5000`
 
-4. Open your web browser and navigate to:
-   ```
-   http://localhost:5000
-   ```
+## API Endpoints
 
-## Usage
+### Transactions
+- `GET /api/transactions` - Get all transactions
+- `POST /api/transactions` - Add new transaction
+- `DELETE /api/transactions/<id>` - Delete a transaction
 
-1. **Adding Transactions**
-   - Select the transaction type (Income/Expense)
-   - Enter the amount
-   - Choose a category
-   - Add an optional description
-   - Click "Add Transaction"
+### Summary
+- `GET /api/summary` - Get financial summary (totals, categories, etc.)
 
-2. **Viewing Summary**
-   - The dashboard shows total income, expenses, and current balance
-   - Pie chart displays expenses by category
-   - Bar chart compares income vs expenses
+## Project Structure
 
-3. **Managing Transactions**
-   - View all transactions in the table below
-   - Delete transactions using the delete button
-   - Transactions are automatically sorted by date
+```
+├── app.py              # Flask application
+├── requirements.txt    # Python dependencies
+├── static/            # Static files
+│   ├── css/          # Stylesheets
+│   └── js/           # JavaScript files
+└── templates/         # HTML templates
+    └── index.html    # Main dashboard template
+```
 
-## Technologies Used
+## Contributing
 
-- Backend: Flask (Python)
-- Database: SQLite
-- Frontend: HTML, CSS, JavaScript
-- Charts: Chart.js
-- UI Framework: Bootstrap 5 
+Feel free to submit issues and enhancement requests!
